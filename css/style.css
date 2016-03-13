@@ -1,7 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
 html {
-	background-color: #E8512D;
 	font-family: arial;
-	color: white;
+	color: black;
 }
 
 body {
@@ -31,9 +34,8 @@ li a:hover {
 }
 
 nav {
-	margin-bottom: 40px;
-	position: fixed;
-	top: 40px;
+	position: absolute;
+	top: 30px;
 }
 
 nav, ul {
@@ -46,4 +48,49 @@ ul {
 
 .banner {
 	width: 100%;
+	opacity: .5;
+}
+
+.banner-text {
+	position: absolute;
+	top: 100px;
+	text-align: center;
+	width: 100%;
+	padding: 0 25%;
+}
+
+.inline-wrapper div{
+	display: inline-block;
+	width: 33%;
+	position: relative;
+}
+
+.inline-wrapper div img{
+	width: 100%;
+	height: 300px;
+	transition: opacity .5s;
+}
+
+.inline-wrapper div h4{
+	position: absolute;
+	top: 50%;
+	opacity: 0;
+	transition: opacity .5s;
+	text-align: center;
+	width: 100%;
+	font-size: 40px;
+	margin: 0;
+	transform: translateY(-50%);
+	color: rgb(150,150,150);
+	background-color: black;
+	height: 70px;
+	padding-top: 2%;
+}
+
+.inline-wrapper div:hover h4{
+	opacity: 1;
+}
+
+.inline-wrapper div:hover img{
+	opacity: .2;
 }
