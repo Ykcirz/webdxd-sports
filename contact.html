@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 	<title>Sports</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <nav class="desktop-nav">
+  
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="games.html">Games</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/List_of_Canadian_sports_personalities" target="_blank">Players</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <h1>Contact Us</h1>
-
-  <form action="">
-
-    <input type="text" placeholder="Your Name">
     
-    <input type="email" placeholder="Your Email">
+    <li><a href="index.html">Home</a></li>
+    
+    <li><a href="games.html">Games</a></li>
+    
+    <li><a href="players.html">Players</a></li>
+    
+    <li><a href="contact.html">Contact</a></li>
+  
+  </ul>
 
-    <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+</nav>
 
-    <button>Submit</button>
+<nav class="mobile-nav">
+
+<div class="hamburger">
+  
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
+
+</nav>
+  <h1 class="contact-topic page-top">Contact Us</h1>
+
+  <form class="container contact-form" action="">
+
+    <input class="form-control" type="text" placeholder="Your Name">
+    
+    <input class="form-control" type="email" placeholder="Your Email">
+
+    <textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+    <button class="btn btn-success">Submit</button>
 
   </form>
 </body>
